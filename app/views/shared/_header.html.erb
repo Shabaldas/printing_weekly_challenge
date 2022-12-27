@@ -16,16 +16,16 @@
       </ul>
 
       <a href="/" class="absolute mx-auto left-0 right-0 text-center z-0">
-        <img class="mx-auto" src="./../../assets/images/logo.svg" alt="3D Print Logo" width="44" height="40">
+        <%= image_tag("logo.svg", size: "44x16", alt: "Edit Entry", class: "mx-auto") %>
       </a>
 
       <div class="flex items-center gap-2.5">
         <a href="#" class="block p-3">
-          <img src="./../../assets/images/facebook.svg" alt="fb" width="20" height="20">
+          <%= image_tag("facebook.svg", size: "20x20", alt: "fb", class: "mx-auto") %>
         </a>
 
         <a href="#" class="block p-3">
-          <img src="./../../assets/images/instagram.svg" alt="instagram" width="20" height="20">
+          <%= image_tag("instagram.svg", size: "20x20", alt: "instagram", class: "mx-auto") %>
         </a>
 
         <button class="button px-16">Login</button>
