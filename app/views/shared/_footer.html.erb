@@ -1,10 +1,47 @@
-<footer class="w-full bg-gray-800 pb-8">
-	<div class="w-full max-w-screen-2xl mx-auto px-7 xl:px-24">
-		<div class="block mx-auto text-center xl:text-left xl:flex xl:justify-between xl:items-center py-16">
+<footer class="w-full bg-darkblue mt-auto">
+  <div class="container">
+    <div class="flex items-center gap-32 py-8 text-white font-medium text-base leading-[21px]">
+      <a href="/">
+        <img src="./../../assets/images/logo_white.svg" alt="3D Print Logo" width="79" height="71">
+      </a>
+
+      <ul class="flex flex-col gap-2.5">
+        <li>
+          <a href="challenges">Challenges</a>
+        </li>
+
+        <li>
+          <a href="#">Rules</a>
+        </li>
+
+        <li>
+          <a href="juries">Jury</a>
+        </li>
+      </ul>
+
+      <ul class="flex flex-col gap-2.5">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="w-full h-[2px] bg-darksecondary" />
+
+  <div class="container">
+  	<div class="text-gray text-xs py-4">
+      <%= "© #{Time.zone.now.year}" %>
+      <span>All rights reserved</span>
 		</div>
-		<div class="flex justify-between items-center text-zinc-400 border-t border-gray-500 pt-6">
-      <%= "© #{Time.zone.now.year}" + t('global.footer.law') %>
-		</div>
-	</div>
+  </div>
 </footer>
 

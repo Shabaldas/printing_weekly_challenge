@@ -1,9 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;500;600;700&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
 
 @layer base {
@@ -13,16 +12,12 @@
   }
 }
 
-@font-face {
-  font-family: 'IBMPlexMono';
-  src: local('IBMPlexMono'), url(./fonts/IBMPlexMono.ttf) format('ttf');
-}
-/*
-
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  .container {
+    @apply max-w-[1352px];
+  }
+
+  .button {
+    @apply font-medium text-xl leading-none text-darkblue py-3 px-[72px] bg-transparent border-solid border-2 border-darkblue
   }
 }
-
-*/

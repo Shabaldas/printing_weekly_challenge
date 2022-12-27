@@ -7,16 +7,26 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}'
   ],
+
   theme: {
+    container: {
+      padding: '20px',
+      center: true,
+    },
+
     extend: {
-      backgroundImage: {
-        'hero': "url('main_picture.png')"
-      },
       fontFamily: {
         sans: ['IBM Plex Mono', ...defaultTheme.fontFamily.sans]
       },
+
+      colors: {
+        darkblue: '#2A343E',
+        darksecondary: '#6E7579',
+        gray: '#B2BDC5',
+      },
     },
   },
+
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),

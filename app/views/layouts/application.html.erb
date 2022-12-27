@@ -11,14 +11,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="font-sans">
-    <div class="">
-      <%= render "shared/header" %>
-    </div>
+  <body class="font-sans text-darkblue flex flex-col min-h-screen overflow-x-hidden">
+    <%= render "shared/header" %>
   
-    <div class="h-full w-full">
+    <main class="h-full w-full">
       <%= yield %>
-    </div>
+    </main>
+
     <%= render "shared/footer" %>
   </body>
 </html>
