@@ -10,6 +10,18 @@
     font-family: 'IBMPlexMono';
     src: local('IBMPlexMono'), url(./fonts/IBMPlexMono.ttf) format('ttf');
   }
+
+  body:has(#home) {
+    @apply bg-cream bg-[url('main_picture.png')] bg-no-repeat bg-top bg-[100%_auto];
+  }
+
+  body:has(#challenge) {
+    @apply bg-gold;
+  }
+
+  body:has(#participate) {
+    @apply bg-creamlight;
+  }
 }
 
 @layer components {
@@ -17,7 +29,15 @@
     @apply max-w-[1352px];
   }
 
+  .title {
+    @apply font-bold text-[54px] leading-none;
+  }
+
   .button {
-    @apply font-medium text-xl leading-none text-darkblue py-3 px-[72px] bg-transparent border-solid border-2 border-darkblue
+    @apply font-medium text-xl leading-none text-darkblue py-3 px-[72px] bg-transparent border-solid border-2 border-darkblue;
+  }
+
+  .nav-list li.active::before {
+    @apply content-[''] absolute left-0 bottom-0 w-full h-[3px] bg-darkblue;
   }
 }
