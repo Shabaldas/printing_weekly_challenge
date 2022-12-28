@@ -16,6 +16,7 @@ gem "redis", "~> 4.0"
 gem "tzinfo-data"
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
+gem "devise"
 
 group :development, :test do
   gem "awesome_print"
