@@ -1,30 +1,35 @@
-<header class="w-full h-16 relative z-30">
-  <div class="w-full max-w-screen-2xl mx-auto flex justify-between items-center px-7 lg:px-24">
-    <div class="flex w-1/2 justify-between">
-      <div class="w-24">
-      <h1 class="font-bold">TEST</h1>
-        <%#= link_to home_path do %>
-          <%#= image_tag("partials_img/logo.png") %>
-            <%# end %>
+<header class="w-full relative border-b-[1px] border-darkblue">
+  <div class="container">
+    <div class="flex justify-between items-center">
+      <ul class="nav-list flex gap-[70px] text-base leading-[22px] font-semibold z-10">
+        <li class="active relative py-[29px]">
+          <a href="challenges">Challenges</a>
+        </li>
+
+        <li class="relative py-[29px]">
+          <a href="#">Rules</a>
+        </li>
+
+        <li class="relative py-[29px]">
+          <a href="juries">Jury</a>
+        </li>
+      </ul>
+
+      <a href="/" class="absolute mx-auto left-0 right-0 text-center z-0">
+        <%= image_tag("logo.svg", size: "44x16", alt: "3D Print Logo", class: "mx-auto") %>
+      </a>
+
+      <div class="flex items-center z-10">
+        <a href="#" class="block p-3">
+          <%= image_tag("facebook.svg", size: "20x20", alt: "fb") %>
+        </a>
+
+        <a href="#" class="block p-3">
+          <%= image_tag("instagram.svg", size: "20x20", alt: "instagram") %>
+        </a>
+
+        <button class="button px-16 ml-3">Login</button>
       </div>
-      <nav class="w-2/3 hidden lg:block text-gray-800 font-medium">
-        <ul class="h-full flex flex-col lg:flex-row flex-initial justify-between items-center text-center tracking-wide">
-          <li class="px-4 cursor-pointer">
-            <h1 class="font-semibold">TEST</h1>
-            <%#= active_link_to t('global.header.head'), home_path, active: :exact %>
-          </li>
-          <li class="px-4 cursor-pointer">
-            <h1 class="font-semibold">TEST</h1>
-            <%#= active_link_to t('global.header.calculator'), calculator_path %>
-          </li>
-          <li class="px-4 cursor-pointer">
-            <h1 class="font-semibold">TEST</h1>
-            <%#= active_link_to t('global.header.store'), products_path %>
-          </li>
-        </ul>
-      </nav>
     </div>
   </div>
-  <div class="block mx-auto text-center xl:text-left xl:flex xl:justify-between xl:items-center py-16">
-	</div>
 </header>

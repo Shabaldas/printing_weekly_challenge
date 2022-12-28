@@ -1,9 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;500;600;700&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
 
 @layer base {
@@ -11,18 +10,34 @@
     font-family: 'IBMPlexMono';
     src: local('IBMPlexMono'), url(./fonts/IBMPlexMono.ttf) format('ttf');
   }
-}
 
-@font-face {
-  font-family: 'IBMPlexMono';
-  src: local('IBMPlexMono'), url(./fonts/IBMPlexMono.ttf) format('ttf');
-}
-/*
+  body:has(#home) {
+    @apply bg-cream bg-[url('main_picture.png')] bg-no-repeat bg-top bg-[100%_auto];
+  }
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  body:has(#challenge) {
+    @apply bg-gold;
+  }
+
+  body:has(#participate) {
+    @apply bg-creamlight;
   }
 }
 
-*/
+@layer components {
+  .container {
+    @apply max-w-[1352px];
+  }
+
+  .title {
+    @apply font-bold text-[54px] leading-none;
+  }
+
+  .button {
+    @apply font-medium text-xl leading-none text-darkblue py-3 px-[72px] bg-transparent border-solid border-2 border-darkblue;
+  }
+
+  .nav-list li.active::before {
+    @apply content-[''] absolute left-0 bottom-0 w-full h-[3px] bg-darkblue;
+  }
+}

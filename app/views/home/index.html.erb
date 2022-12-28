@@ -1,28 +1,36 @@
-<div class="">
-	<span class="font-bold text-6xl flex px-24 py-16">
-		Print Weekly
-		</br>
-		Challenge
-	</span>
-	<span class="font-thin flex lg:px-24">
-		A platform for 3d printing community.</br>
-		Check out these fantastic submissions</br> 
-		to our Monday Prompts.
-	</span>
-	</br>
-	<div class="lg:px-24">
-		<button class="bg-transparent hover:bg-gray-100 text-black font-semibold py-2 px-4 border border-black shadow">
-			Participate
-		</button>
-	</div>
-	<div class="lg:px-24">
-		<button class="bg-transparent hover:bg-gray-100 text-black font-semibold py-2 px-4 border border-black shadow">
-			Participate
-		</button>
-	</div>
-	<div class="lg:px-24">
-		<button class="bg-transparent hover:bg-gray-100 text-black font-semibold py-2 px-4 border border-black shadow">
-			Participate
-		</button>
-	</div>
+<div id="home">
+  <div class="container">
+    <div class="pt-[120px] pb-[220px] flex flex-col items-start gap-[34px] max-w-lg">
+      <h1 class="title drop-shadow">Print Weekly Challenge</h1>
+      <p class="text-xl">A platform for 3d printing community. Check out these fantastic submissions to our Monday Prompts.</p>
+      <a class="button mt-[18px]" href="participates">Participate</a>
+    </div>
+
+    <div class="flex items-center gap-36 pb-28">
+      <%= image_tag("pexels-rodion.png", size: "640x550", alt: "img", class: "w-full max-w-[49%]") %>
+
+      <div class="flex flex-col items-start gap-[14px]">
+        <div class="py-1 px-3 bg-darkblue">
+          <span class="inline-block text-creamlight font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+        </div>
+
+        <h4 class="font-bold text-2xl leading-[30px] max-w-sm pb-[22px]">Name Of The New Challenge In Two Lines</h4>
+        <p class="text-xl pb-[22px] max-w-md">Short description about it. Check out these fantastic submissions to our Monday Prompts. Here will be some text, some more.</p>
+
+        <div class="flex gap-20">
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">24</h6>
+            <span class="text-base">Candidates</span>
+          </div>
+
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">$200</h6>
+            <span class="text-base">Gift</span>
+          </div>
+        </div>
+
+        <a class="button mt-[28px]" href="participates">Participate</a>
+      </div>
+    </div>
+  </div>
 </div>
