@@ -1,17 +1,19 @@
 <div id="home">
   <div class="container">
+    <!-- Hero section -->
     <div class="pt-[120px] pb-[220px] flex flex-col items-start gap-[34px] max-w-lg">
       <h1 class="title drop-shadow">Print Weekly Challenge</h1>
       <p class="text-xl">A platform for 3d printing community. Check out these fantastic submissions to our Monday Prompts.</p>
       <a class="button mt-[18px]" href="participates">Participate</a>
     </div>
 
+    <!-- Info section -->
     <div class="flex items-center gap-36 pb-28">
       <%= image_tag("pexels-rodion.png", size: "640x550", alt: "img", class: "w-full max-w-[49%]") %>
 
       <div class="flex flex-col items-start gap-[14px]">
         <div class="py-1 px-3 bg-darkblue">
-          <span class="inline-block text-creamlight font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+          <span class="text-creamlight font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
         </div>
 
         <h4 class="font-bold text-2xl leading-[30px] max-w-sm pb-[22px]">Name Of The New Challenge In Two Lines</h4>
@@ -31,6 +33,173 @@
 
         <a class="button mt-[28px]" href="participates">Participate</a>
       </div>
+    </div>
+
+    <!-- Previous Challenges section -->
+    <div class="pb-7">
+      <div class="flex justify-between items-center pb-6">
+        <h3 class="font-semibold text-2xl leading-7">Previous Challenges</h3>
+        <a class="text-2xl leading-none underline" href="challenges">See all</a>
+      </div>
+
+      <!-- Slider -->
+      <div class="swiper homeSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">Two Lines New Challenge Name That Is it</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("pexels-rodion.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">Lorem ipsum dolor sit amet consectetur adipisic elit. Rem, ea. Modi illo nobis voluptatibus illum iste</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">One Lines Challenge</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">Two Lines New Challenge Name That Is it</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">Two Lines New Challenge Name That Is it</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div data-controller="carousel" class="swiper-container my-5"
+          data-carousel-options-value='{
+          "pagination": { "el": ".swiper-pagination", 
+                          "dynamicBullets": "true" },
+          "navigation": { "nextEl": ".swiper-button-next", 
+                          "prevEl": ".swiper-button-prev"}}'>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+
+        <!-- Pagination (... or 1/10 or progress bar) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons (< >) -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> 
     </div>
   </div>
 </div>
