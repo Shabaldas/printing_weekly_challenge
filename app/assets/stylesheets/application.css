@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* Swiper */
+.swiper-container {
+  touch-action: pan-y;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #B2BDC5;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2A343E;
+}

@@ -37,14 +37,16 @@
 
     <!-- Previous Challenges section -->
     <div class="pb-7">
-      <div class="flex justify-between items-center pb-6">
+      <div class="flex justify-between items-center pb-3">
         <h3 class="font-semibold text-2xl leading-7">Previous Challenges</h3>
         <a class="text-2xl leading-none underline" href="challenges">See all</a>
       </div>
 
       <!-- Slider -->
-      <div class="swiper homeSwiper">
+      <div data-controller="carousel" class="swiper-container relative pt-8">
+        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
+          <!-- Slides -->
           <div class="swiper-slide">
             <div class="flex flex-col bg-white">
               <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
@@ -96,7 +98,7 @@
               </a>
             </div>
           </div>
-          
+
           <div class="swiper-slide">
             <div class="flex flex-col bg-white">
               <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
@@ -174,32 +176,61 @@
               </a>
             </div>
           </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white">
+              <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[320px] object-cover") %>
+
+              <div class="flex gap-[1px]">
+                <div class="py-2 px-6 bg-darkblue w-full">
+                  <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+                </div>
+
+                <div class="py-2 px-6 bg-darkblue">
+                  <span class="text-white font-bold leading-6">$400</span>
+                </div>
+              </div>
+
+              <h3 class="px-6 my-6 text-2xl leading-7 font-bold line-clamp-2 h-14">Two Lines New Challenge Name That Is it</h3>
+
+              <a class="flex justify-between items-center text-xl leading-[24px] py-3 px-6 border-t-[1px] border-darkblue" href="challenges">
+                Results
+
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="swiper-pagination"></div>
-      </div>
-
-      <div data-controller="carousel" class="swiper-container my-5"
-          data-carousel-options-value='{
-          "pagination": { "el": ".swiper-pagination", 
-                          "dynamicBullets": "true" },
-          "navigation": { "nextEl": ".swiper-button-next", 
-                          "prevEl": ".swiper-button-prev"}}'>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        </div>
-
-        <!-- Pagination (... or 1/10 or progress bar) -->
-        <div class="swiper-pagination"></div>
-
-        <!-- Navigation buttons (< >) -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div> 
+    </div>
+
+    <!-- Famous for section -->
+    <div class="pt-[126px] pb-[136px] flex gap-[118px] relative overflow-hidden">
+      <%= image_tag("cube1.svg", size: "810x814", alt: "img", class: "absolute top-[41px] right-0 z-[-1]") %>
+
+      <h2 class="title max-w-[554px]">What are we famous for?</h2>
+
+      <div class="flex flex-col items-start gap-16 mt-3">
+        <p class="text-xl max-w-[528px]">Here we can place some different info about our company and challenges that we want to held. It’s all about good prints and 3D models, that you can imagine. Be a part of us today!</p>
+
+        <div class="flex gap-11">
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">245</h6>
+            <span class="text-base">Total Participants</span>
+          </div>
+
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">$2300</h6>
+            <span class="text-base">Reward Fond</span>
+          </div>
+        </div>
+
+        <p class="mt-10">Our Jury</p>
+      </div>
     </div>
   </div>
 </div>
