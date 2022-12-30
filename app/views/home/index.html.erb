@@ -43,7 +43,8 @@
       </div>
 
       <!-- Slider -->
-      <div data-controller="carousel" class="swiper-container relative pt-8">
+      <div data-controller="carousel" class="swiper-container relative pt-8"
+        data-carousel-options-value='{"slidesPerView": "3"}'>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -229,7 +230,16 @@
           </div>
         </div>
 
-        <p class="mt-10">Our Jury</p>
+        <div class="flex flex-col items-start gap-[6px]">
+          <div class="flex items-center gap-[10px]">
+            <%= image_tag("our_jury1.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+            <%= image_tag("our_jury2.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+            <%= image_tag("our_jury3.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+            <%= image_tag("our_jury4.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+          </div>
+
+          <p>Our Jury</p>
+        </div>
       </div>
     </div>
   </div>

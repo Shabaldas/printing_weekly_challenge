@@ -9,12 +9,15 @@ export default class extends Carousel {
 
   get defaultOptions() {
     return {
-      slidesPerView: 3,
       spaceBetween: 32,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
     }
   }
 }

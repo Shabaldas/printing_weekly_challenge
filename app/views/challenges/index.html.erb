@@ -1,3 +1,260 @@
-<div class="" id="challenge">
-  <h1>Challenge</h1>
+<div id="challenge">
+  <!-- Breadcrumb -->
+  <div class="container">
+    <a class="flex items-center gap-6 text-xl leading-[26px] my-6 w-fit" href="/">
+        <svg class="rotate-180" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+        </svg>
+
+        Back To Home Page
+    </a>
+  </div>
+
+  <!-- Hero section -->
+  <div class="container">
+    <div class="pb-20 flex gap-[118px] relative">
+      <%= image_tag("cube2.svg", size: "810x477", alt: "img", class: "absolute bottom-0 right-0 z-[-1]") %>
+
+      <div class="flex flex-col items-start gap-11">
+        <h2 class="title leading-[1.2] max-w-[554px]">The Name Of The Challenge and else stuff</h2>
+        <a class="button" href="participates">Participate</a>
+      </div>
+
+      <div class="flex flex-col items-start gap-[18px] mt-3">
+        <div class="py-1 px-3 bg-darkblue">
+          <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+        </div>
+
+        <p class="text-xl max-w-[528px] mb-4">A platform for 3d printing community. Check out these fantastic submissions to our Monday Prompts. We will anounce our winners in 3 weeks. Wish you good luck and let the streanth be wit you!</p>
+
+        <div class="flex gap-20">
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">24</h6>
+            <span class="text-base">Candidates</span>
+          </div>
+
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">$200</h6>
+            <span class="text-base">Gift</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Table -->
+  <div class="bg-creamlight pb-24">
+    <div class="container">
+      <div class="grid grid-cols-[4fr_14fr_7fr_25fr]">
+        <h5 class="border-b-[1px] border-darkblue text-darksecondary font-medium py-5 pr-3">Place</h5>
+        <h5 class="border-b-[1px] border-darkblue text-darksecondary font-medium py-5 pr-3">Person</h5>
+        <h5 class="border-b-[1px] border-darkblue text-darksecondary font-medium py-5 pr-3">Score</h5>
+        <h5 class="border-b-[1px] border-darkblue text-darksecondary font-medium py-5">Works</h5>
+
+        <!-- Participant row -->
+        <div class="col-span-full border-b-[1px] border-darkblue py-8 text-[0px]">
+          <span class="inline-block w-full max-w-[8%] text-[54px] leading-none font-bold pr-3 align-top">01</span>
+
+          <div class="inline-block w-full max-w-[28%] pr-3 align-top">
+            <div class="flex items-center gap-4 mb-9">
+              <%= image_tag("our_jury1.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+
+              <div>
+                <h6 class="font-bold line-clamp-1 text-base">Goffy_boy</h6>
+                <p class="line-clamp-1 text-base">Ron Jefrey</p>
+              </div>
+            </div>
+
+            <p class="line-clamp-3 text-base">A little description about the work I made. Fantastic story, that I tell.</p>
+          </div>
+
+          <span class="inline-block w-full max-w-[14%] text-[54px] leading-none font-bold pr-3 align-top">67</span>
+
+          <!-- Slider -->
+          <div data-controller="carousel" class="swiper-container relative inline-block align-top w-full max-w-[50%] overflow-hidden"
+            data-carousel-options-value='{"slidesPerView": "2"}'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("pexels-rodion.png", alt: "img", class: "w-full max-w-full h-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+
+            <div class="swiper-button-next">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Participant row -->
+        <div class="col-span-full border-b-[1px] border-darkblue py-8 text-[0px]">
+          <span class="inline-block w-full max-w-[8%] text-[54px] leading-none font-bold pr-3 align-top">02</span>
+
+          <div class="inline-block w-full max-w-[28%] pr-3 align-top">
+            <div class="flex items-center gap-4 mb-9">
+              <%= image_tag("our_jury1.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+
+              <div>
+                <h6 class="font-bold line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</h6>
+                <p class="line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</p>
+              </div>
+            </div>
+
+            <p class="line-clamp-3 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde aspernatur! Dolorum distinctio consequuntur unde architecto, voluptatem quo doloremque, quos, at eius quidem officiis ipsam veniam placeat. Quidem, officia ipsa?</p>
+          </div>
+
+          <span class="inline-block w-full max-w-[14%] text-[54px] leading-none font-bold pr-3 align-top">59</span>
+
+          <!-- Slider -->
+          <div data-controller="carousel" class="swiper-container relative inline-block align-top w-full max-w-[50%] overflow-hidden"
+            data-carousel-options-value='{"slidesPerView": "2"}'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+            
+            <div class="swiper-button-next">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Participant row -->
+        <div class="col-span-full border-b-[1px] border-darkblue py-8 text-[0px]">
+          <span class="inline-block w-full max-w-[8%] text-[54px] leading-none font-bold pr-3 align-top">03</span>
+
+          <div class="inline-block w-full max-w-[28%] pr-3 align-top">
+            <div class="flex items-center gap-4 mb-9">
+              <%= image_tag("our_jury1.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+
+              <div>
+                <h6 class="font-bold line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</h6>
+                <p class="line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</p>
+              </div>
+            </div>
+
+            <p class="line-clamp-3 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde aspernatur! Dolorum distinctio consequuntur unde architecto, voluptatem quo doloremque, quos, at eius quidem officiis ipsam veniam placeat. Quidem, officia ipsa?</p>
+          </div>
+
+          <span class="inline-block w-full max-w-[14%] text-[54px] leading-none font-bold pr-3 align-top">45</span>
+
+          <!-- Slider -->
+          <div data-controller="carousel" class="swiper-container relative inline-block align-top w-full max-w-[50%] overflow-hidden"
+            data-carousel-options-value='{"slidesPerView": "2"}'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+            
+            <div class="swiper-button-next">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Participant row -->
+        <div class="col-span-full border-b-[1px] border-darkblue py-8 text-[0px]">
+          <span class="inline-block w-full max-w-[8%] text-[54px] leading-none font-bold pr-3 align-top">04</span>
+
+          <div class="inline-block w-full max-w-[28%] pr-3 align-top">
+            <div class="flex items-center gap-4 mb-9">
+              <%= image_tag("our_jury1.jpg", size: "40x40", alt: "img", class: "rounded-full") %>
+
+              <div>
+                <h6 class="font-bold line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</h6>
+                <p class="line-clamp-1 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quis modi libero non assumenda.</p>
+              </div>
+            </div>
+
+            <p class="line-clamp-3 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde aspernatur! Dolorum distinctio consequuntur unde architecto, voluptatem quo doloremque, quos, at eius quidem officiis ipsam veniam placeat. Quidem, officia ipsa?</p>
+          </div>
+
+          <span class="inline-block w-full max-w-[14%] text-[54px] leading-none font-bold pr-3 align-top">39</span>
+
+          <!-- Slider -->
+          <div data-controller="carousel" class="swiper-container relative inline-block align-top w-full max-w-[50%] overflow-hidden"
+            data-carousel-options-value='{"slidesPerView": "2"}'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+
+              <div class="swiper-slide">
+                <%= image_tag("challenge1.png", alt: "img", class: "w-full max-w-full max-h-[184px] object-cover") %>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+            
+            <div class="swiper-button-next">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
