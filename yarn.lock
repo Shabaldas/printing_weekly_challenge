@@ -6,3 +6,30 @@
   version "4.5.13"
   resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-4.5.13.tgz#f91559ab3b5074a8e2db75c0370b9640e80c99b2"
   integrity sha512-KAE7X2LgCV4X6p7vj1h2phRnhPX4YUa8FBAB0Jj9xW7Q+p+k2ce4HEAMJJ2RFHI075ClgQx+KZuDBNuiKgp5yw==
+
+dom7@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
+  dependencies:
+    ssr-window "^4.0.0"
+
+ssr-window@^4.0.0, ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
+stimulus-carousel@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/stimulus-carousel/-/stimulus-carousel-5.0.1.tgz#87306f7619ea64a8c36258f6f90f2989089c848d"
+  integrity sha512-j37fjoUc/4hkroxuEK6OuhYMd7d9sZN/5pKB5Y+PJzM9Wy5KvAfsURW4c7zMo58BQAlVrrz45XJrHc/XleEU3Q==
+  dependencies:
+    swiper "^8.4.5"
+
+swiper@^8.4.5:
+  version "8.4.5"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.4.5.tgz#149ca81f67393d3f33abddd0f968fc37e99980b5"
+  integrity sha512-zveyEFBBv4q1sVkbJHnuH4xCtarKieavJ4SxP0QEHvdpPLJRuD7j/Xg38IVVLbp7Db6qrPsLUePvxohYx39Agw==
+  dependencies:
+    dom7 "^4.0.4"
+    ssr-window "^4.0.2"

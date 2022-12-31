@@ -34,7 +34,7 @@
   }
 
   .button {
-    @apply font-medium text-xl leading-none text-darkblue py-3 px-[72px] bg-transparent border-solid border-2 border-darkblue;
+    @apply w-full max-w-[280px] font-medium text-xl leading-none text-center text-darkblue py-3 bg-transparent border-solid border-2 border-darkblue;
   }
 
   .nav-list li.active::before {
