@@ -28,6 +28,7 @@
 /public/assets
 
 /node_modules
+.solargraph.yml
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
