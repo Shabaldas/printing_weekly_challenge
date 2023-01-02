@@ -1,13 +1,13 @@
 <footer class="w-full bg-darkblue mt-auto">
   <div class="container">
     <div class="flex items-center gap-32 py-8 text-white font-medium text-base leading-[21px]">
-      <a href="/">
-        <%= image_tag("logo_white.svg", size: "79x71", alt: "3D Print Logo") %>
-      </a>
+      <%= link_to root_path do %>
+        <%= image_tag("logo_white.svg", size: "79x71") %>
+      <% end %>
 
       <ul class="flex flex-col gap-2.5">
         <li>
-          <a href="challenges">Challenges</a>
+          <%= link_to "Challenges", challenges_path%>
         </li>
 
         <li>

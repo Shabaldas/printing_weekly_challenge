@@ -3,12 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.3"
 
+gem "active_link_to"
 gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
+gem "solargraph"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "jbuilder"

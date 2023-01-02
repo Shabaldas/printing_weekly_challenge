@@ -1,22 +1,24 @@
 <header class="w-full relative border-b-[1px] border-darkblue">
   <div class="container">
     <div class="flex justify-between items-center">
-      <ul class="nav-list flex gap-[70px] text-base leading-[22px] font-semibold z-10">
-        <li class="active relative py-[29px]">
-          <a href="challenges">Challenges</a>
+      <ul class="nav-list flex gap-16 text-base leading-[22px] font-semibold z-10">
+        <li class="relative px-1 py-[29px]">
+          <%= active_link_to "Challenges", challenges_path, active: :exact %>
         </li>
 
-        <li class="relative py-[29px]">
+        <li class="relative px-1 py-[29px]">
           <a href="#">Rules</a>
         </li>
 
-        <li class="relative py-[29px]">
-          <a href="juries">Jury</a>
+        <li class="relative px-1 py-[29px]">
+          <%= active_link_to "Jury", juries_path %>
         </li>
       </ul>
 
-      <a href="/" class="absolute mx-auto left-0 right-0 text-center z-0">
-        <%= image_tag("logo.svg", size: "44x16", alt: "3D Print Logo", class: "mx-auto") %>
+      <a class="absolute mx-auto left-0 right-0 text-center z-0">
+        <%= link_to root_path do %>
+          <%= image_tag("logo.svg", size: "44x16", alt: "Printing Weekly", class: "mx-auto") %>
+        <% end %>
       </a>
 
       <div class="flex items-center z-10">
