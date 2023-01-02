@@ -40,4 +40,20 @@
   .nav-list li a.active::before {
     @apply content-[''] absolute left-0 bottom-0 w-full h-[3px] bg-darkblue;
   }
+
+  .label {
+    @apply flex flex-col items-start gap-[10px] text-xl cursor-pointer;
+  }
+
+  .input {
+    @apply w-full max-w-full px-6 py-[10px] text-darkblue text-xl font-medium border-solid border-2 border-darksecondary focus:border-darkblue placeholder:text-darksecondary;
+  }
+
+  .textarea {
+    @apply w-full max-w-full h-28 px-6 py-[10px] text-darkblue text-xl font-medium border-solid border-2 border-darksecondary resize-none focus:border-darkblue placeholder:text-darksecondary;
+  }
+
+  input:checked + div svg {  
+    @apply block;  
+  }
 }
