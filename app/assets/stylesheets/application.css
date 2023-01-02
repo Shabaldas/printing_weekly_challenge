@@ -14,10 +14,21 @@
  *= require_self
  */
 
+/* Input type number hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
 
 /* Swiper */
 .swiper-container {
   touch-action: pan-y;
+  overflow-x: hidden;
 }
 
 .swiper-wrapper {

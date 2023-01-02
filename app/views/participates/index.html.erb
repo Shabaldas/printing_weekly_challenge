@@ -1,3 +1,190 @@
-<div class="" id="participate">
-  <h1>Participates</h1>
+<div id="participate">
+  <!-- Breadcrumb -->
+  <div class="container">
+    <a class="flex items-center gap-6 text-xl leading-[26px] my-6 w-fit" href="/">
+        <svg class="rotate-180" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.31383 1.68617L8.7844 9.15674L1.31383 16.6273" stroke="#2A343E" stroke-width="2"/>
+        </svg>
+
+        Back To Home Page
+    </a>
+  </div>
+
+  <!-- Hero section -->
+  <div class="container">
+    <div class="flex gap-[118px] pb-14 border-b-[1px] border-darkblue">
+      <h2 class="title leading-[1.2] w-full max-w-[554px]">Registration to</h2>
+
+      <div class="flex flex-col items-start gap-[16px] mt-3">
+        <div class="py-1 px-3 bg-darkblue">
+          <span class="text-white font-medium leading-6">23 May 2021 - 25 Nov 2021</span>
+        </div>
+
+        <h4 class="font-bold text-2xl leading-[30px] max-w-sm mb-[10px]">Name Of The New Challenge In Two Lines</h4>
+
+        <p class="text-xl max-w-[528px] mb-14">Short description about it. Check out these fantastic submissions to our Monday Prompts. Here will be some text, some more.</p>
+
+        <div class="flex gap-20">
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">24</h6>
+            <span class="text-base">Candidates</span>
+          </div>
+
+          <div class="flex flex-col gap-[3px]">
+            <h6 class="font-bold text-2xl leading-none">$200</h6>
+            <span class="text-base">Gift</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form class="pb-24" action="" method="post">
+    <div class="container">
+      <!-- Form block -->
+      <div class="flex justify-between items-start gap-5 pt-6 pb-10 border-b-[1px] border-darkblue">
+        <h5 class="w-full max-w-[51%] text-2xl font-semibold">General Infornation</h5>
+
+        <div class="w-full max-w-[49%] flex flex-col gap-[26px]">
+          <label class="label" for="first_name">
+            First Name
+            <input class="input" type="text" id="first_name" placeholder="Create Nickname" required>
+          </label>
+
+          <label class="label" for="last_name">
+            Last Name
+            <input class="input" type="text" id="last_name" placeholder="Write your Last Name" required>
+          </label>
+
+          <label class="label" for="nickname">
+            Nickname
+            <input class="input" type="text" id="nickname" placeholder="Write your nickname" required>
+          </label>
+
+          <label class="label" for="email">
+            E-mail
+            <input class="input" type="email" id="email" placeholder="Provide valid email" required>
+          </label>
+
+          <label class="label" for="about">
+            About your work
+            <textarea class="textarea" id="about" placeholder="Share a few words that describes you" required></textarea>
+          </label>
+        </div>
+      </div>
+
+      <!-- Form block -->
+      <div class="flex justify-between items-start gap-5 pt-6 pb-10 border-b-[1px] border-darkblue">
+        <h5 class="w-full max-w-[51%] text-2xl font-semibold">Password</h5>
+
+        <div class="w-full max-w-[49%] flex flex-col gap-[26px]">
+          <p>Please provide valid password. At least 8 characters, try to use numbers. Combine numbers with capital letters. Don’t share you credentiats with any person.</p>
+
+          <label class="label" for="password">
+            Password
+            <input class="input" type="password" id="password" placeholder="********" required>
+          </label>
+
+          <label class="label" for="complete_password">
+            Complete Password
+            <input class="input" type="password" id="complete_password" placeholder="********" required>
+          </label>
+        </div>
+      </div>
+
+      <!-- Form block -->
+      <div class="flex justify-between items-start gap-5 pt-6 pb-10 border-b-[1px] border-darkblue">
+        <h5 class="w-full max-w-[51%] text-2xl font-semibold">Payment</h5>
+
+        <div class="w-full max-w-[49%] flex flex-col gap-[26px]">
+          <label class="label" for="credit_card">
+            Card Number
+            <input class="input" type="number" id="credit_card" placeholder="0000-0000-0000-0000" required>
+          </label>
+
+          <div class="flex items-center gap-8">
+            <label class="label" for="credit_exp">
+              Exp date
+              <input class="input" type="text" id="credit_exp" placeholder="00/00" required>
+            </label>
+
+            <label class="label" for="credit_cvv">
+              CVV
+              <input class="input" type="password" id="credit_cvv" placeholder="***" required>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form block -->
+      <div class="flex justify-between items-start gap-5 pt-6 pb-10 border-b-[1px] border-darkblue">
+        <h5 class="w-full max-w-[51%] text-2xl font-semibold">Upload Photo</h5>
+
+        <div class="w-full max-w-[49%] flex flex-col gap-[26px]">
+          <p>You can add more that one photo to double your chanses to win the final gift. File should be nit more than 35Mb in PNG, JPEG or GIF formats. </p>
+
+          <label class="flex justify-center w-full h-[88px] transition border-dashed border-2 border-darksecondary appearance-none cursor-pointer outline-none hover:border-darkblue" for="file_upload">
+            <span class="flex items-center gap-[14px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M36 2H2V30H36V2ZM0 0V32H38V0H0Z" fill="#6E7579"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4159 13.5615L21.6783 20.2652L20.3217 21.7348L14.584 16.4385L6.25924 26.1508L4.74072 24.8492L14.4159 13.5615Z" fill="#6E7579"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4328 15.0186L33.7071 24.2929L32.2929 25.7071L24.5672 17.9814L17.7682 26.1402L16.2318 24.8598L24.4328 15.0186Z" fill="#6E7579"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26 6C24.3431 6 23 7.34315 23 9C23 10.6569 24.3431 12 26 12C27.6569 12 29 10.6569 29 9C29 7.34315 27.6569 6 26 6ZM21 9C21 6.23858 23.2386 4 26 4C28.7614 4 31 6.23858 31 9C31 11.7614 28.7614 14 26 14C23.2386 14 21 11.7614 21 9Z" fill="#6E7579"/>
+              </svg>
+              
+              <span class="text-xl font-medium text-darksecondary">
+                Drag here or
+                <span class="font-bold">browse</span>
+                to upload
+              </span>
+            </span>
+            <input type="file" id="file_upload" class="hidden">
+          </label>
+
+          <div class="flex items-center gap-8 w-full">
+            <%= image_tag("drag_drop.svg", size: "192x104", alt: "img", class: "w-full max-h-[104px]") %>
+            <%= image_tag("drag_drop.svg", size: "192x104", alt: "img", class: "w-full max-h-[104px]") %>
+            <%= image_tag("drag_drop.svg", size: "192x104", alt: "img", class: "w-full max-h-[104px]") %>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form block -->
+      <div class="flex justify-between items-start gap-5 pt-6">
+        <h5 class="w-full max-w-[51%] text-2xl font-semibold">Almost there!</h5>
+
+        <div class="w-full max-w-[49%] flex flex-col gap-[26px]">
+          <!-- Checkboxes -->
+          <div class="flex flex-col items-start gap-4">
+            <div class="flex items-start gap-4">
+              <input type="checkbox" id="terms" class="opacity-0 absolute h-4 w-4 z-10 mt-1 cursor-pointer" required />
+
+              <div class="border-[1px] border-darksecondary w-4 h-4 flex justify-center items-center flex-shrink-0 z-0 mt-1">
+                <svg class="hidden pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.19156 1.41421L7.77734 0L3.53519 4.24216L1.41421 2.12119L0 3.5354L2.12097 5.65637L2.12049 5.65685L3.5347 7.07107L3.53519 7.07059L3.53553 7.07093L4.94975 5.65672L4.9494 5.65637L9.19156 1.41421Z" fill="#2A343E"/>
+                </svg>
+              </div>
+
+              <label for="terms" class="select-none cursor-pointer">I agree to all rules and terms and conditions as well as some gerenal rules. I’m using only my photos to particitpate in this challenge.</label>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <input type="checkbox" id="mailer" class="opacity-0 absolute h-4 w-4 z-10 mt-1 cursor-pointer" />
+
+              <div class="border-[1px] border-darksecondary w-4 h-4 flex justify-center items-center flex-shrink-0 z-0 mt-1">
+                <svg class="hidden pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.19156 1.41421L7.77734 0L3.53519 4.24216L1.41421 2.12119L0 3.5354L2.12097 5.65637L2.12049 5.65685L3.5347 7.07107L3.53519 7.07059L3.53553 7.07093L4.94975 5.65672L4.9494 5.65637L9.19156 1.41421Z" fill="#2A343E"/>
+                </svg>
+              </div>
+
+              <label for="mailer" class="select-none cursor-pointer">I’d like to receive all messages with challenges updates.</label>
+            </div>
+          </div>
+
+          <button class="button max-w-full" type="submit">Complete</button>
+        </div>
+      </div>
+    </div>
+  </form>
 </div>
