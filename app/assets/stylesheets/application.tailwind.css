@@ -37,7 +37,12 @@
     @apply w-full max-w-[280px] font-medium text-xl leading-none text-center text-darkblue py-3 bg-transparent border-solid border-2 border-darkblue;
   }
 
-  .nav-list li.active::before {
+  /* .nav-list li.active::before {
     @apply content-[''] absolute left-0 bottom-0 w-full h-[3px] bg-darkblue;
+  } */
+
+  .active {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 3px;
   }
 }
