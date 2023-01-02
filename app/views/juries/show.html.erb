@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="flex items-center gap-36 pb-28">
+  
+
+    <div class="flex flex-col items-start gap-[14px]">
+      <h1 class="font-bold text-2xl leading-[30px] max-w-sm pb-[22px]">
+        <%= @jury.nick_name %>
+        </br>
+        <%= "#{@jury.first_name} #{@jury.last_name}" %>
+      </h1>
+      <p class="text-xl pb-[22px] max-w-md">Short description about this Jury. Check out these fantastic submissions to our Monday Prompts. Here will be some text, some more.</p>
+
+      <div class="flex gap-20">
+        <div class="flex flex-col gap-[3px]">
+          <h6 class="font-bold text-2xl leading-none">24</h6>
+          <span class="text-base">Finnished Challenges</span>
+        </div>
+
+        <a href="#" class="block p-3">
+          <%= image_tag("instagram.svg", size: "20x20", alt: "fb") %>
+        </a>
+        <a href="#" class="block p-3">
+          <%= image_tag("facebook.svg", size: "20x20", alt: "fb") %>
+        </a>
+        <a href="#" class="block p-3">
+          <%= image_tag("facebook.svg", size: "20x20", alt: "fb") %>
+        </a>
+      </div>
+    </div>
+
+    <%= image_tag(@jury.avatar, size: "640x550", alt: "img", class: "w-full max-w-[49%]") %>
+  </div>
+</div>

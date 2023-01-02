@@ -4,6 +4,6 @@ class JuriesController < ApplicationController
   end
 
   def show
-    @jury = User.find_by(params: id)
+    @jury = User.find(params[:id])
   end
 end
