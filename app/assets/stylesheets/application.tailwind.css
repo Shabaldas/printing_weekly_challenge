@@ -22,6 +22,10 @@
   body:has(#participate) {
     @apply bg-creamlight;
   }
+
+  body:has(#registration) {
+    @apply bg-creamlight;
+  }
 }
 
 @layer components {
