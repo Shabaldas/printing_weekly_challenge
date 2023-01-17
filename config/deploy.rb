@@ -6,6 +6,7 @@ set :repo_url, "git@github.com:Shabaldas/printing_weekly_challenge.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+set :branch, :main if :main
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/#{fetch :application}"

@@ -15,7 +15,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "jbuilder"
 gem "redis", "~> 4.0"
-gem "tzinfo-data"
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 gem "devise"
@@ -46,4 +46,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+platform :mswin, :mingw, :x64_mingw do
+  gem "win32_api"
 end
