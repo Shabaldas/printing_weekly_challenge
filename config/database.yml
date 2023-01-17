@@ -83,7 +83,7 @@ test:
 #
 production:
   <<: *default
-  secret_key_base: Rails.application.credentials.dig(:secret_key_base)
+  # secret_key_base: Rails.application.credentials.dig(:secret_key_base)
   database: printing_weekly_challenge_production
   username: printing_weekly_challenge
   password: <%= ENV["PRINTING_WEEKLY_CHALLENGE_DATABASE_PASSWORD"] %>
