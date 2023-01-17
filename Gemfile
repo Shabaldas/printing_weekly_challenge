@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.3"
+ruby "3.1.2"
 
 gem "active_link_to"
 gem "rails", "~> 7.0.4"
@@ -19,6 +19,11 @@ gem "tzinfo-data"
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 gem "devise"
+
+gem 'capistrano', '~> 3.11'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 group :development, :test do
   gem "awesome_print"
