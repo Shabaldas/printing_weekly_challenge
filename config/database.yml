@@ -86,4 +86,4 @@ production:
   # secret_key_base: Rails.application.credentials.dig(:secret_key_base)
   database: printing_weekly_challenge_production
   username: deploy
-  password: 
+  password: 123987wv
