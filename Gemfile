@@ -6,6 +6,7 @@ ruby "3.1.2"
 gem "active_link_to"
 gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
+gem "faker"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
@@ -38,7 +39,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "faker"
   gem "web-console"
 end
 
