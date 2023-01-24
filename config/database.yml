@@ -83,7 +83,7 @@ test:
 #
 production:
   <<: *default
-  secret_key_base: Rails.application.credentials.dig(:secret_key_base)
+  secret_key_base: 5e56fc9c91eaaf2d28cdef2bed6a871ee9b4796e704e61cd1157b2dffcfe26126c30178696326f693675e01a37f664145cc4610d9e985a2049bbd5b52de42ff1
   database: printing_weekly_challenge_production
   username: deploy
   password: 123987wv
