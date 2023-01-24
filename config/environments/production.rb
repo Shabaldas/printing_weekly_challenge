@@ -31,7 +31,7 @@ Rails.application.configure do
   config.assets.compile = false
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  config.asset_host = "https://printingweekly.com"
+  # config.asset_host = "https://printingweekly.com"
   # config.action_mailer.default_url_options = { host: 'printingweekly.com' }
 
   # Specifies the header that your server uses for sending files.
