@@ -30,6 +30,7 @@
 /node_modules
 .solargraph.yml
 .vscode
+.envrc
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
