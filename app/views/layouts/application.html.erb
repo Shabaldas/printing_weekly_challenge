@@ -18,6 +18,16 @@
       <%= yield %>
     </main>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYJ097H2E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SPYJ097H2E');
+    </script>
+    
     <%= render "shared/footer" %>
   </body>
 </html>
