@@ -9,15 +9,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
-
-  <body class="font-sans bg-white text-darkblue flex flex-col min-h-screen overflow-x-hidden">
-    <%= render "shared/header" %>
-  
-    <main class="h-full w-full">
-      <%= yield %>
-    </main>
-
+     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYJ097H2E"></script>
     <script>
@@ -27,7 +19,15 @@
 
       gtag('config', 'G-SPYJ097H2E');
     </script>
-    
+  </head>
+
+  <body class="font-sans bg-white text-darkblue flex flex-col min-h-screen overflow-x-hidden">
+    <%= render "shared/header" %>
+  
+    <main class="h-full w-full">
+      <%= yield %>
+    </main>
+
     <%= render "shared/footer" %>
   </body>
 </html>
