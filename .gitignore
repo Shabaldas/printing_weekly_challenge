@@ -27,6 +27,7 @@
 
 /public/assets
 /path
+/coverage
 
 /node_modules
 .solargraph.yml

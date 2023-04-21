@@ -31,12 +31,20 @@ gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
 group :development, :test do
+  gem "bullet"
+  gem "pry-rails"
   gem "awesome_print"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "factory_bot_rails"
+  gem "rspec-rails", git: "http://github.com/rspec/rspec-rails", branch: "6-0-maintenance"
+  gem "rubocop-faker"
   gem "rubocop", require: false
+  gem "rubocop-performance"
   gem "rubocop-rails"
   gem 'rubocop-rspec'
   gem 'rubocop-performance'
+  gem "webmock"
+
 end
 
 group :development do
@@ -47,6 +55,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "database_cleaner-active_record"
+  gem "timecop", "~> 0.9.6"
+  gem "simplecov", require: false
+  gem "rspec_junit_formatter"
 end
 
 platform :mswin, :mingw, :x64_mingw do
