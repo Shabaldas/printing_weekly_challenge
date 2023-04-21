@@ -7,4 +7,12 @@ Rails.application.routes.draw do
   resources :juries
   resources :challenges
   resources :participates
+
+  namespace :admin do
+    get '/', to: 'dashboard#index', as: :dashboard
+  end
+
+  namespace :challange_juries do
+    get '/', to: 'dashboard#index', as: :dashboard
+  end
 end
