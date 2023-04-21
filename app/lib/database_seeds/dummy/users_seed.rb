@@ -35,7 +35,7 @@ module DatabaseSeeds
             nick_name: Faker::Internet.username(specifier: 5..10),
             email: "jury#{::User.last&.id.to_i.next}@mail.com",
             password: '123456abc@',
-            avatar: avatar
+            avatar:
           ).tap do |user|
             user.save! if does_not_exist?(user.id)
           end
@@ -47,7 +47,7 @@ module DatabaseSeeds
       end
 
       def avatar
-        Rack::Test::UploadedFile.new(Rails.root.join("app/assets/images/jury#{[1,2,3].sample}.png"), 'image/png')
+        Rack::Test::UploadedFile.new(Rails.root.join("app/assets/images/jury#{[1, 2, 3].sample}.png"), 'image/png')
       end
     end
   end

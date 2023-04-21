@@ -13,7 +13,7 @@ module DatabaseSeeds
       def create_finnished_challenges
         (1..10).each do |id|
           Challenge.new(
-            id: id,
+            id:,
             title: Faker::Lorem.sentence(word_count: 7),
             description: Faker::Lorem.paragraph_by_chars(number: 125),
             candidates: (10..30).to_a.sample,
@@ -22,7 +22,7 @@ module DatabaseSeeds
             status: 'finnished',
             technology: 'fdm',
             participation: ['free', 'paid'].sample,
-            duration: (DateTime.now - 10.week) + 6.days,
+            duration: (DateTime.now - 10.weeks) + 6.days,
             created_at: DateTime.now - id.week
           ).tap do |challenge|
             challenge.save! if does_not_exist?(challenge.id)
@@ -33,7 +33,7 @@ module DatabaseSeeds
       def create_in_progress_challenges
         (11..12).each do |id|
           Challenge.new(
-            id: id,
+            id:,
             title: Faker::Lorem.sentence(word_count: 7),
             description: Faker::Lorem.paragraph_by_chars(number: 125),
             candidates: (10..30).to_a.sample,
@@ -51,7 +51,7 @@ module DatabaseSeeds
       end
 
       def does_not_exist?(id)
-        !Challenge.exists?(id: id)
+        !Challenge.exists?(id:)
       end
     end
   end

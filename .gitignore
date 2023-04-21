@@ -26,6 +26,7 @@
 !/tmp/storage/.keep
 
 /public/assets
+/path
 
 /node_modules
 .solargraph.yml

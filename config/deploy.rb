@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.17.1"
+lock '~> 3.17.1'
 
-set :application, "printing_weekly_challenge"
-set :repo_url, "git@github.com:Shabaldas/printing_weekly_challenge.git"
+set :application, 'printing_weekly_challenge'
+set :repo_url, 'git@github.com:Shabaldas/printing_weekly_challenge.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
