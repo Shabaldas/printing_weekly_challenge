@@ -12,7 +12,13 @@ Rails.application.routes.draw do
     get '/', to: 'dashboard#index', as: :dashboard
   end
 
-  namespace :challange_juries do
+  namespace :challenge_juries do
     get '/', to: 'dashboard#index', as: :dashboard
+  end
+
+  namespace :challenge_members do
+    namespace :participations_wizard do
+      resources :generals, only: [:new, :create]
+    end
   end
 end

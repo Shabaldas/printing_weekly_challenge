@@ -4,10 +4,15 @@
     <div class="pt-[120px] pb-[220px] flex flex-col items-start gap-[34px] max-w-lg">
       <h1 class="title drop-shadow">Print Weekly Challenge</h1>
       <p class="text-xl">A platform for 3d printing community. Check out these fantastic submissions to our Monday Prompts.</p>
-      <a class="button mt-[18px]" href="participates">Participate</a>
+      <%= link_to "Participate", new_challenge_members_participations_wizard_general_path, class: "button mt-[18px]" %>
+      <a class="button new_challenge_members_participations_wizard_generalmt-[18px]" href="participates">Participate</a>
     </div>
 
     <!-- Info section -->
+    <div class="flex justify-between items-center pb-3">
+      <h3 class="font-semibold text-2xl leading-7">Current Challenges</h3>
+      <%= link_to "See all", challenges_path(state: "in_progress"), class: "text-2xl leading-none underline" %>
+    </div>
     <div class="flex items-center gap-36 pb-28">
       <%= image_tag("pexels-rodion.png", size: "640x550", alt: "img", class: "w-full max-w-[49%]") %>
 
@@ -39,7 +44,7 @@
     <div class="pb-7">
       <div class="flex justify-between items-center pb-3">
         <h3 class="font-semibold text-2xl leading-7">Previous Challenges</h3>
-        <a class="text-2xl leading-none underline" href="challenges">See all</a>
+        <%= link_to "See all", challenges_path(state: "finnished"), class: "text-2xl leading-none underline" %>
       </div>
 
       <!-- Slider -->
