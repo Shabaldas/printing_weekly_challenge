@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#index'
+  get 'rulles', to: 'home#rulles'
   resources :juries
   resources :challenges
   resources :participates
